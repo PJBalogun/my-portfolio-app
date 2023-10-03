@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${poppins.className}`}>
-      <main className='w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible' style={{}}>
+      <main className='w-full m-auto flex flex-col items-center justify-center min-h-screen opening-box-animate-paddin text-white overflow-hidden md:overflow-visible' style={{ maxWidth: "1200px" }}>
       <div className="p-5 w-full flex-1 text-center bg-bg">
         <div className="hidden sm:block z-100">
           <Navbar />

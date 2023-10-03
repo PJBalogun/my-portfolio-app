@@ -1,5 +1,6 @@
 import React from "react";
 import {skills} from "@/utils/constants/homePageData";
+import Image from "next/image";
 
 function Skills() {
   return (
@@ -33,7 +34,10 @@ function Skills() {
               key={index}
               className="w-10 mx-auto flex items-center flex-col justify-center"
             >
-              {/* <img src={item.icon} style={item.style} /> */}
+              {/* <img src={item.icon}  /> */}
+              <div style={item.style}>
+                  <Image src={item.icon} height={30} width={30} alt={item.title + "-icon"}/>
+              </div>
               <p className="text-xs text-fun-gray font-bold mt-3 opacity-80">
                 {item.title}
               </p>
